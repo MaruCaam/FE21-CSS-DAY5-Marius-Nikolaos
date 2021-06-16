@@ -1,0 +1,156 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$background-header: rgb(202, 187, 183);
+$text: right;
+
+* 
+    box-sizing: border-box
+
+body 
+    margin: 0 auto
+    padding: 0
+    width: 100vw
+    height: 100vh
+  
+
+.container 
+    font: $font-stack
+    width: 100%     
+
+header 
+    background-color: $background-header
+
+
+.headerLogo 
+    text-align: $text
+    position: relative
+
+p 
+    font-size: 20px
+    margin: 0px
+
+.name 
+    width: 60%
+    position: relative
+    padding-right: 40px
+    top: 70px
+    left: 70px
+
+.logo 
+    width: 35%
+    position: relative
+    padding-right: 100px
+    margin-bottom: 40px
+
+header li
+    display: inline
+    list-style-type: none
+    
+nav li 
+    display: inline
+    list-style-type: none
+
+nav 
+    height: 50px
+
+#navbar 
+    position: relative
+    margin: 0
+    padding-top: 10px
+
+nav 
+    background-color: rgb(198, 82, 82)
+    margin: 0
+    text-align: $text
+    padding-right: 40px
+    padding-top: 5px
+    margin-top: -10px
+
+li a 
+    position: relative
+    text-decoration-line: none
+    color: white
+    font-size: 20px
+    padding-right: 20px
+
+main 
+    text-align: center
+
+h1 
+    font-size: 50px
+    margin-left: 35%
+    width: 40%
+
+/* float the images*/
+
+.float 
+    margin: 0px
+    width: 100%
+
+// @extent 
+.imgHeader 
+    float: left
+    margin: 0px
+
+.leftColm 
+    @extend .imgHeader
+    width: 50%
+    
+.left
+    width: 100%
+
+.rightColm 
+    @extend .imgHeader
+    margin: 0px
+
+.imgCard
+    width: 80%
+    padding: 0
+    margin-top: 15px
+
+.imgScooter
+    @extend .imgCard
+
+.sg 
+    width: 90%
+
+.imgPhone 
+    width: 90%
+    margin-top: 80px
+    height: 320px
+    /* height of container */
+    object-fit: cover
+
+figcaption 
+    font-weight: bold
+    font-size: 20px
+
+.atm 
+    width: 90%
+    padding-left: 50px
+
+.es 
+    width: 80%
+    padding-left: 30px
+
+footer 
+    clear: both
+    padding: 20px
+
+.contFooter 
+    background-color: $background-header
+    position: relative
+    padding-top: 20px
+    margin-top: 20px
+
+.logoFooter 
+     width: 15%
+
+
+.footer
+    text-align: center
+    height: 40px
+
+h5 
+    @extend .footer
+
+
