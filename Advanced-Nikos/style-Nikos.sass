@@ -1,0 +1,80 @@
+*
+    box-sizing: border-box
+
+header
+    background-color: blue
+
+.header 
+    width: 100%
+    height: 50px
+    display: grid
+    grid-template-columns: 85% 15%
+
+.items
+    display: flex
+    align-items: center
+
+.lineTwo
+    @extend .items
+
+.item
+    padding-left: 10px
+
+a
+    text-decoration-line: none
+
+.btn1
+    @extend .item
+
+.secondLine
+    width: 100%
+    height: 100%
+    display: grid
+    grid-template-columns: 40% 60%
+
+.year
+    height: 100%
+    width: 80%
+
+.two
+    margin: 20px
+
+main
+    @extend .two  
+
+.main
+    background-color: green
+
+.navbar
+    width: 100%
+    height: 50px
+    display: flex
+    justify-content: space-around
+    
+.navi    
+    align-items: center
+    padding: 10px
+    background-color: yellow
+    width: 15%
+    text-align: center
+
+.border
+    border-bottom: 10px solid red
+    margin: 20px 0 20px 0
+
+.images
+    display: grid
+    grid-template-columns: 33% 33% 33%
+    grid-gap: 10px 10px 
+    margin: 10px 0 10px 0
+    
+.img1
+    width: 100%
+    height: 200px
+
+
+.img2
+    @extend .img1
+
+.img3
+     @extend .img1
